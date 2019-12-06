@@ -21,5 +21,5 @@ for i in range(len(xs)):
     temp.append(ys[i])
     matx.append(temp)
 
-# k_means.show_clusters(matx)
-dbscan.compute(matx)
+k_means.show_clusters(matx)
+# dbscan.compute(matx)
