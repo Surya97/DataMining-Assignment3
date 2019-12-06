@@ -3,9 +3,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import k_means
 import dbscan
+import agglomerative
 
 
-df = read_data.read_csv('./mealAmountData/mealAmountData1.csv')
+df = read_data.read_csv('./mealAmountData/mealAmountData3.csv')
 print(df)
 print(df.shape)
 df.info()
@@ -23,3 +24,5 @@ for i in range(len(xs)):
 
 k_means.show_clusters(matx)
 # dbscan.compute(matx)
+agglomerative.find_number_of_clusters(matx) #-> finds the number of clusters to consider by plotting the dendrogram
+agglomerative.compute(matx)
